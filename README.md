@@ -128,15 +128,3 @@ pred_idx = np.argmax(probs)
 
 print(f"Predicted Tag: {CLASS_NAMES[pred_idx]} ({probs[pred_idx] * 100:.2f}% confidence)")
 
-
-🌐 OpenAPI REST Service Specification
-
-The zootag_openapi.yaml file defines the RESTful API contract (OpenAPI 3.0.3) for serving the model in production:
-
-POST /predict: Accepts a multipart/form-data specimen image upload and returns the predicted TaxonomicLabel, top confidence score, and full probability distribution across all 7 categories.
-
-GET /categories: Lists the 7 supported uppercase taxonomic labels.
-
-GET /health: Health check verifying TFLite interpreter readiness and expected tensor shape [1, 224, 224, 3].
-
-To preview the interactive Swagger UI documentation, paste the contents of zootag_openapi.yaml into Swagger Editor.
