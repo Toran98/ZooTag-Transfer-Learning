@@ -24,19 +24,6 @@ MARINE_INVERTEBRATE (jellyfish, sea cucumbers, mussels, brittle stars/starfish, 
 
 REPTILE
 
-📂 Repository Structure
-
-├── notebooks/
-│   └── ZooTag_Transfer_Learning.ipynb   # End-to-end data processing, training, evaluation & TFLite export
-├── models/
-│   └── zootag_model.tflite              # Final optimized TensorFlow Lite model for mobile deployment
-├── api/
-│   └── zootag_openapi.yaml              # OpenAPI 3.0.3 REST API specification
-├── docs/
-│   ├── ZooTag_Model_Card.pdf            # Formal Model Card reporting performance & limitations
-│   └── confusion_matrix.png             # Confusion matrix on the isolated 20% test set
-└── README.md
-
 
 📊 Dataset & Preprocessing Pipeline
 
